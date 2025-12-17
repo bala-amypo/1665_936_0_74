@@ -1,7 +1,11 @@
 package com.example.demo.entity
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.id;
+impo
 @Entity
 public class studententity{
+    @id
+    @GeneratedValue
     private integer id;
     private String name;
     private String email;
@@ -43,8 +47,13 @@ public void setcreated(Date created){
     this.created=created;
 }
 
-public SampleEntity(Integer id,String name,String email,String password,Date created){
+public studententity(Integer id,String name,String email,String password,Date created){
     this.id=id;
     this.name=name;
-    this.email
+    this.email=email;
+    this.password=password;
+    this.created=created;
+}
+public SampleEntity(){
+    
 }
