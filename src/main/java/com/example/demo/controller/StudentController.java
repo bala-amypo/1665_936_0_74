@@ -1,19 +1,41 @@
+// package com.example.demo.controller;
+
+// import org.springframework.web.bind.annotation.RestController;
+// import com.example.demo.service.StudentService;
+// import org.springframework.web.bind.annotation.RequestBody;
+// import org.springframework.web.bind.annotation.PostMapping;
+// import org.springframework.web.bind.annotation.Autowired;
+
+// import com.example.demo.service.studententity;
+
+// @RestController
+// public class StudentController{
+//     @Autowired StudentService ser
+
+//     @PostMapping("/post")
+//     public studententity senddata(@RequestBody studententity stu){
+//         return ser.postData(stu); 
+//     }
+// }         
+
 package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.service.StudentService;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.demo.service.studententity;
+import com.example.demo.service.StudentService;
+import com.example.demo.entity.studententity.StudentEntity;
 
 @RestController
-public class StudentController{
-    @Autowired StudentService ser
+public class StudentController {
+
+    @Autowired
+    private StudentService ser;
 
     @PostMapping("/post")
-    public studententity senddata(@RequestBody studententity stu){
-        return ser.postData(stu); 
+    public StudentEntity senddata(@RequestBody StudentEntity stu) {
+        return ser.postData(stu);
     }
-}         
+}
