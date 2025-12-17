@@ -5,3 +5,4 @@ public interface StudentService{
     studententity postData(studententity stu);
 
  }
+
