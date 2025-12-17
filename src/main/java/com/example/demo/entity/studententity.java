@@ -8,6 +8,6 @@ public class studententity{
     private String email;
     private String password;
     private Date createAt;
-
+    
     
 }
