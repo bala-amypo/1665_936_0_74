@@ -7,5 +7,7 @@ public class studententity{
     private integer id;
     private String email;
     private String password;
+    private Date createAt;
 
+    
 }
