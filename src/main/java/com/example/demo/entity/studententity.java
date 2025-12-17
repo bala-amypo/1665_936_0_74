@@ -8,7 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
 
 @Entity
-public class StudentEntity{
+public class studententity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
@@ -50,7 +50,7 @@ public class StudentEntity{
         this.created=created;
     }
 
-  public StudentEntity(String name,Integer id,String email,String password,Date created){
+  public studententity(String name,Integer id,String email,String password,Date created){
         this.name=name;
         this.id=id;
         this.email=email;
@@ -58,6 +58,6 @@ public class StudentEntity{
         this.created=created;
     }
        
-    public StudentEntity(){
+    public studententity(){
     }
 }
