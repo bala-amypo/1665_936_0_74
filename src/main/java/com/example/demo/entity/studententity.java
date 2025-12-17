@@ -1,18 +1,18 @@
 package com.example.demo.entity
 import jakarta.persistence.Entity;
-import jakarta.persistence.id;
-impo
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
 @Entity
 public class studententity{
-    @id
-    @GeneratedValue
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private integer id;
     private String name;
     private String email;
     private String password;
-    private Date created;
-
-    
+    private Date created;    
 }
 
 public Integer getid(){
@@ -21,7 +21,6 @@ public Integer getid(){
 public void setid(Integer id){
     this.id=id;
 }
-
 public String getname{
     return name;
 }
@@ -47,6 +46,7 @@ public void setcreated(Date created){
     this.created=created;
 }
 
+
 public studententity(Integer id,String name,String email,String password,Date created){
     this.id=id;
     this.name=name;
@@ -54,6 +54,8 @@ public studententity(Integer id,String name,String email,String password,Date cr
     this.password=password;
     this.created=created;
 }
-public SampleEntity(){
+
+
+public studententity(){
     
 }
