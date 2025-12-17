@@ -6,7 +6,7 @@ public class studententity{
     private String name;
     private String email;
     private String password;
-    private Date createAt;
+    private Date created;
 
     
 }
@@ -33,6 +33,18 @@ public void setemail(String email){
 public String getpassword(){
     return password;
 }
-public void setpasswor(String password){
-    this.passwor=password;
+public void setpassword(String password){
+    this.password=password;
+}
+public Date getcreated(){
+    return created;
+}
+public void setcreated(Date created){
+    this.created=created;
+}
+
+public SampleEntity(Integer id,String name,String email,String password,Date created){
+    this.id=id;
+    this.name=name;
+    this.email
 }
