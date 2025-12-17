@@ -15,7 +15,7 @@ public class studententity{
     private String email;
     private String password;
     private Date created;    
-}
+
 
 public Integer getid(){
     return id;
@@ -55,4 +55,6 @@ public studententity(Integer id,String name,String email,String password,Date cr
     this.email=email;
     this.password=password;
     this.created=created;
+}
+
 }
