@@ -11,7 +11,7 @@ public class StudentServiceImpl implements StudentService{
 // findByid()
 // deleteByid()
 // existByid() 
-@override 
+@override                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
    public studententity postData(studententity stu);
     return student.save(stu);
 
