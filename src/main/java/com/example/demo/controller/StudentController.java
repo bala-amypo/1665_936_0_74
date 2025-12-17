@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.example.demo.service.StudentService;
-import com.example.demo.entity.studententity.StudentEntity;
+import com.example.demo.entity.studententity;
 
 @RestController
 public class StudentController {
@@ -35,7 +35,7 @@ public class StudentController {
     private StudentService ser;
 
     @PostMapping("/post")
-    public StudentEntity senddata(@RequestBody StudentEntity stu) {
+    public Studententity senddata(@RequestBody Studententity stu) {
         return ser.postData(stu);
     }
 }
