@@ -30,3 +30,9 @@ public String getemail{
 public void setemail(String email){
     this.email=email;
 }
+public String getpassword(){
+    return password;
+}
+public void setpasswor(String password){
+    this.passwor=password;
+}
