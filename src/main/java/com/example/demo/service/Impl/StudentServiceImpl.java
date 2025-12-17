@@ -6,12 +6,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student; 
-//SAVE()
- 
-// 
-// 
+//save()
+// findall()
+// findByid()
+// deleteByid()
+// existByid() 
 
    public studententity postData(studententity stu);
-
+    return student.save();
 
 }
