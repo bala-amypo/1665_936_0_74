@@ -10,7 +10,7 @@ import java.util.Date;
 public class studententity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private integer id;
+    private Integer id;
     private String name;
     private String email;
     private String password;
