@@ -12,7 +12,7 @@ public class StudentServiceImpl implements StudentService{
 // deleteByid()
 // existByid() 
 @override                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-   public studententity postData(studententity stu);
+   public studententity postData(studententity stu){
     return student.save(stu);
-
+}
 }
