@@ -24,7 +24,7 @@ private String email;
 private String password;
 @Max(35)
 @Positive(message="Age cannot be negative")
-private Long age;
+private int age;
 
  public String getName(){
         return name;
@@ -52,13 +52,15 @@ private Long age;
     public void setPassword(String password){
         this.password=password;
     }
-    public Long getAge(){
+    public int getAge(){
         return age;
     }
-    public void setAge(Long age){
+    public void setAge(int age){
         this.age=age;
     }
 
+ public ValidationEntity(){
+ }
 public ValidationEntity(Long id,
 @NotNull
 @Size(min=2,max=6,message="require 2 to 6 characters")
@@ -70,16 +72,13 @@ String name,
  String password,
 @Max(35)
 @Positive(message="Age cannot be negative")
-Long age){
+int age){
         this.name=name;
         this.id=id;
         this.email=email;
         this.password=password;
         this.age=age;
     
- }
- public ValidationEntity(){
-
  }
 }
 
