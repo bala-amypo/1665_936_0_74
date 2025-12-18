@@ -18,7 +18,7 @@ public class ValidationController{
     }
 
     @GetMapping("/put/{id}")
-    public StudentEntity getData(@PathVariable int id){
+    public ValidationEntity getData(@PathVariable int id){
         return ser.getData(id);
     }
 }
