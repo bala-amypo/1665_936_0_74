@@ -151,10 +151,10 @@ private int age;
     public void setPassword(String password){
         this.password=password;
     }
-    public int getAge(){
+    public Long getAge(){
         return age;
     }
-    public void setAge(int age){
+    public void setAge(Long age){
         this.age=age;
     }
 
