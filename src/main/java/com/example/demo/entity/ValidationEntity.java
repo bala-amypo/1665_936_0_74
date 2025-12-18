@@ -66,6 +66,36 @@ public class ValidationEntity{
     public void age(int age){
         this.age=age;
     }
-    
+    //Parameter constructor
+    public ValidationEntity(private Long id,
+    @NotNull
+    @Size(min = 2,max = 0,message = "must be 2 to 10 characters" )
 
+    private String username,
+    @Email(message = "Email is not Valid")
+    private String email
+    @Max(6)
+    @NotNull(message = "Password is mandatory")
+    @Size(min = 2,max)
+    private String password;
+    @Positive(message = "Age mus be a Positive Number")
+    private int age;
+
+
+
+    ){
+
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.password=password;
+        this.age=age;
+    
+    }
+
+     // Default constructor
+    public StudentEntity(){
+
+    }
 }
+
