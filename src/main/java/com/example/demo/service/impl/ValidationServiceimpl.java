@@ -9,5 +9,9 @@ import com.example.demo.entity.StudentEntity;
 
 @Service
 public class ValidationServiceimpl implements ValidationService{
-
+    @Autowired ValidationRepository student;
+    @Override
+    public ValidationEntity postdata(ValidationEntity stu){
+        return student.save(stu);
+    }
 }
