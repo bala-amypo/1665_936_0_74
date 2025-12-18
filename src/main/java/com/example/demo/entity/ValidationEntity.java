@@ -110,7 +110,7 @@ import jakarta.validation.constraints.Positive;
 
 @Entity
 @GeneratedValue(strategy=GenerationType.IDENTITY)
-public ValidationEntity{
+public class ValidationEntity{
 
     private Long id;
     @NotNull
@@ -162,8 +162,6 @@ public ValidationEntity{
 
     public ValidationEntity(){
 
-
-
     }
      
     public ValidationEntity(  Long id,
@@ -185,3 +183,6 @@ public ValidationEntity{
         this.age=age;
  
     }
+
+    }
+    
