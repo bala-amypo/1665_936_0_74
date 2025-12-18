@@ -32,5 +32,5 @@ public class StudentController{
         return ser.DeleteData(id);
     }
 
-    @GetMapping("/get")
+    @GetMapping("/")
 }
