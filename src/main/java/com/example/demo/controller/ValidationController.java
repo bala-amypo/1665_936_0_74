@@ -10,7 +10,7 @@ import com.example.demo.service.ValidationService;
 public class ValidationController{
     @Autowired ValidationService ser;
     @PostMapping("/post")
-    public ValidatyEntity sendData(@RequestBody ValidationEntity stu){
+    public ValidationEntity sendData(@RequestBody ValidationEntity stu){
             return ser.postdata(stu);
     }
 }
