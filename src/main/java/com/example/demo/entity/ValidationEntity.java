@@ -123,7 +123,7 @@ private String email;
 private String password;
 @Max(35)
 @Positive(message="Age cannot be negative")
-private int age;
+private Long age;
 
  public String getName(){
         return name;
@@ -169,7 +169,7 @@ String name,
  String password,
 @Max(35)
 @Positive(message="Age cannot be negative")
-int age){
+Long age){
         this.name=name;
         this.id=id;
         this.email=email;
