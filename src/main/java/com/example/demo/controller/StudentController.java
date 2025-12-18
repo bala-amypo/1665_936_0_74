@@ -65,3 +65,4 @@ public class StudentController{
     public List<StudentEntity> getval(){
     return service.getAllData();
 }
+}
