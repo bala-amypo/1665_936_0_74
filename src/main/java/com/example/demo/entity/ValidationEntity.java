@@ -12,6 +12,9 @@ import jakarta.validation.constraints.Positive;
 
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ValidationEntity{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
