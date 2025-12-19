@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
-
+import jakarta.persistence.GenerationType;
 
 import jakarta.validation.constraints.*;
 import jakata.persistence.*;
@@ -13,7 +13,7 @@ import java.util.*;
 @Setter
 @AllAgrsConstructor
 @NoAgrsConstructor
-public class TimeSampEntity{
+public class TimeStampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY);
     private Long id;
