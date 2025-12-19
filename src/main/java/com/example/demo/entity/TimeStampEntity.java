@@ -12,7 +12,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import jakarta.persistance.Pre
+import jakarta.persistance.PrePersist;
+import jakarta.persistance.updateAt
+
 
 @Entity
 @Data
@@ -20,6 +22,7 @@ import jakarta.persistance.Pre
 @Setter
 @AllAgrsConstructor
 @NoAgrsConstructor
+@PrePersist
 @PreUpdate
 public class TimeStampEntity{
     @Id

@@ -6,5 +6,5 @@ import com.example.demo.entity.ValidationEntity;
 
 @Repository
 public interface TimeStampRepository extends JpaRepostiory<TimeStampEntity,Long>{
-
+    
 }
