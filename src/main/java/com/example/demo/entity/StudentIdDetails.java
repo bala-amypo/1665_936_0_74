@@ -13,6 +13,8 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.Getter;
 @Entity
+@Getter
+@Setter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
