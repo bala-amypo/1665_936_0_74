@@ -12,6 +12,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistance.Pre
 
 @Entity
 @Data
@@ -19,6 +20,7 @@ import lombok.NoArgsConstructor;
 @Setter
 @AllAgrsConstructor
 @NoAgrsConstructor
+@PreUpdate
 public class TimeStampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY);
