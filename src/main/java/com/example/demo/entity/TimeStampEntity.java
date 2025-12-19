@@ -7,6 +7,12 @@ import jakarta.validation.constraints.*;
 import jakata.persistence.*;
 import lombok.*;
 import java.util.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 @Entity
 @Data
 @Getter
