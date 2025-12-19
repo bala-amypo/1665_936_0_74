@@ -5,6 +5,6 @@ public class ValidationException extends RuntimeException{
 
     public ValidationException(String message){
         super(message);
-    }
+ 0 0  }
 
-}
+} 
