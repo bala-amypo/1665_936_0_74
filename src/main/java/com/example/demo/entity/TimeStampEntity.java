@@ -8,5 +8,5 @@ package com.example.demo.entity;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TimeStamp{
-
+    
 }
