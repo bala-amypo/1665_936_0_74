@@ -18,8 +18,8 @@ public class ValidationController{
             return ser.postdata(stu);
     }
 
-    @GetMapping("/put/{id}")
-    public ValidationEntity getData(@PathVariable Long id){
+    @GetMapping("/putt/{id}")
+    public ValidationEntity getDatabyid(@PathVariable Long id){
         return ser.getData(id);
     }
 }
