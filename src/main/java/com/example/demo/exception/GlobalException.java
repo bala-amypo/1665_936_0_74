@@ -10,7 +10,7 @@ public class GlobalException{
 
     @ExceptionHandler(ValidationException.class)
     public ResponseBody<String> handleValidationException(ValidationException ex){
-        return new ResponseBody
+        return new ResponseBody<String>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
     }
 
 
