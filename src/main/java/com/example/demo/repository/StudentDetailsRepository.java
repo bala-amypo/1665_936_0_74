@@ -2,9 +2,9 @@ package com.example.demo.repository;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.demo.entity.TimeStampEntity;
+import com.example.demo.entity.StudentDetails;
 
 @Repository
-public interface StudentDetailsRepository extends JpaRepository<TimeStampEntity,Long>{
+public interface StudentDetailsRepository extends JpaRepository<StudentDetails,Long>{
     
 }
