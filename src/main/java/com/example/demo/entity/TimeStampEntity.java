@@ -1,4 +1,7 @@
 package com.example.demo.entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+
 
 import jakarta.validation.constraints.*;
 import jakata.persistence.*;
